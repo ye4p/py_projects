@@ -1,9 +1,12 @@
-x=int(input("Enter value of initial number: "))
-
-while x!=1:
-    if x %2==0:
-        x=x/2
-    else:
-        x=x*3+1
-    print("x value is: ",x)
-print('X is 1!')
+def main(min, max):
+    for x in range(min, max):
+        print(x, " is a number x")
+        n=x
+        while n!=1:
+            if n %2==0:
+                n=n/2
+            else:
+                n=n*3+1
+        print(f"Number {x} got to zero")
+    return True
+main(2, 100000000)
